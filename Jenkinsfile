@@ -9,8 +9,8 @@ pipeline {
     stages {
       stage('checkout') {
            steps {
-             
-                git branch: 'master', url: 'https://github.com/bigugo21/CI-usingAnsible'
+               
+             git credentialsId: '4664b63a-18e4-4579-9c07-f6801e95cf27', url: 'https://github.com/bigugo21/CI-usingAnsible'
              
           }
         }
